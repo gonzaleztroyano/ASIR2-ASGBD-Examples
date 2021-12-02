@@ -15,6 +15,7 @@ BEGIN
     WHILE cuenta_bucle < num_filas DO
 		BEGIN 
             FETCH nombre_cursor INTO vars;
+	SET cuenta_bucle = cuenta_bucle + 1;
         END;
     END WHILE;
     CLOSE nombre_cursor;
